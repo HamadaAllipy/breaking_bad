@@ -23,21 +23,14 @@ class _BuildGridViewState extends State<BuildGridView> {
           _characters = state is GetAllCharactersSuccess? state.characters: [];
         }
           return GridView.builder(
-            itemCount: 3,
+            itemCount: _characters.length,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
               childAspectRatio: 13 / 20,
               crossAxisSpacing: 20,
               mainAxisSpacing: 20,
             ),
-            itemBuilder: (context, index) {
-              if(_characters.isEmpty){
-                return const Center(child: BuildLoading());
-              }
-              else {
-                return const CharacterItem();
-              }
-            },
+            itemBuilder: (context, index) => CharacterItem(charactersModel: _characters[index],),
           );
 
       },
