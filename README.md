@@ -1,6 +1,7 @@
-# breaking_bad
+# breaking bad
 
-A new Flutter project.
+## Overview
+<img src ="https://github.com/HamadaAllipy/breaking_bad/blob/master/assets/screenshots/overview.gif" />
 
 ## Getting Started
 
