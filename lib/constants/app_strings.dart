@@ -1,3 +1,4 @@
+const String appName = 'Breaking bad';
 const String homeScreen = '/';
 
 
